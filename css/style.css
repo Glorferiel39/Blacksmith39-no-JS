@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Proletariat';
+    src: url(/fonts/proletariat.woff2);
+}
+
+
+
+
+
+
+body{
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-repeat: no-repeat;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+li,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*логотип*/
+.container-for-logo{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.header-logo-grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+}
+
+.header-logo-image{
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.header-logo-name{
+    align-self: center;
+    font-size: 27px;
+}
+/*навигация*/
+.header .container {
+    margin-top: 100px;
+    border-top: 1px solid rgb(255, 172, 19);
+    border-bottom: 1px solid rgb(255, 172, 19); 
+    margin-bottom: 40px;
+    
+    
+    
+}
+.navigation-section{
+    margin-bottom: 50px;
+
+}
+.navigation-list{
+    padding: 20px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    font-family:'Proletariat';
+    
+    
+    
+}
+
+.navigation-list a{
+    color: black;
+
+}
+/*приветствие*/
+.welcome{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-image: url("/img/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.welcome .container{
+    height: 800px;
+    font-family:'Proletariat';
+    color:white;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    
+}
+
+.welcome-animation{
+    background-image: url("/img/background-animation.png");
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    animation: welcomeanim 90s linear infinite;
+}
+
+.welcome-form-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+
+
+}
+
+.welcome-form-container .btn{
+   
+
+
+}
+
+/*Преимущества*/
+.advantages-one{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+.advantages-image-one{
+    position: relative;
+    width: 390px;
+    animation: advanatgoneanim 2s linear ;
+    margin-right:100px;
+    transform: rotate(28deg);
+    
+}
+
+.advantages-desc-one{
+    position: absolute;
+    padding-top: 350px;
+    font-size: 50px;
+    font-family:'Proletariat';
+    padding-left: 350px;
+    animation: adventanimdesc 2s linear;
+    opacity: 1;
+}
+.advantages-two{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.advantages-image-two{
+    position: relative;
+    width: 250px;
+    animation:  2s linear ;
+    margin-left: 1100px;
+    animation: advanatgtwoanim 2s linear;
+}
+.advantages-desc-two{
+    position: absolute;
+    padding-top: 350px;
+    font-size: 50px;
+    font-family:'Proletariat';
+    padding-left: 550px;
+    animation: adventanimdesc 2s linear;
+    opacity: 1;
+}
+.advantages-three{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 150px;
+    
+}
+.advantages-image-three{
+    position: relative;
+    width: 500px;
+    animation: advanatgoneanim 2s linear ;
+    margin-left:150px ;
+}
+
+.advantages-desc-three{
+    position: absolute;
+    padding-top: 300px;
+    font-size: 50px;
+    font-family:'Proletariat';
+    padding-left: 550px;
+    animation: adventanimdesc 2s linear;
+    opacity: 1;
+
+
+}
+/*галлерея*/
+.gallery{
+    margin-top: 300px;
+
+
+}
+
+.gallery-title{
+    padding: 20px;
+    font-size: 35px;
+    font-family:'Proletariat';
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: 1px solid rgb(255, 172, 19);
+    border-bottom: 1px solid rgb(255, 172, 19); 
+    letter-spacing: 5px;
+}
+.gallery-list{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, 463px);
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery-image{
+    width: 462px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    
+}
+
+.gallery-image:hover{
+    transform: scale(1.05);
+
+}
+
+/*конкурс*/
+.contest .container{
+    margin-top: 100px ;
+    background-color: rgb(156, 156, 156);
+    transition: 6s;
+
+}
+
+.contest-image-one{
+    display: block;
+    margin: 0 auto;
+    padding-top:250px ;
+    width: 500px;
+
+
+}
+
+.contest-image-two {
+    position: absolute;
+    width: 400px;
+    padding-top: 30px;
+    padding-left: 450px;
+    animation: animcontest 1s linear infinite;    
+}
+
+
+/*анимации*/
+@keyframes welcomeanim{
+    0%{background-position: 0px 0px;}
+    100%{background-position: 0px 500px;}
+}
+
+@keyframes advanatgoneanim{
+    0%{right:1000px;
+    opacity: 0;}
+    50%{right:500px;
+    opacity: 1;}
+    100%{right:0px;
+    opacity: 1;}
+}
+@keyframes advanatgtwoanim{
+    0%{left:1000px;
+    opacity: 0;}
+    50%{left:500px;
+    opacity: 1;}
+    100%{left:0px;
+    opacity: 1;}
+}
+
+@keyframes adventanimdesc{
+    0%{opacity:0}
+    100%{opacity:1}
+
+
+}
+@keyframes animcontest{
+    0%{transform: rotate(10deg);}
+    20%{transform: rotate(15deg);}
+    40%{transform: rotate(20deg);}
+    60%{transform: rotate(25deg);}
+    70%{transform: rotate(30deg);}
+    80%{transform: rotate(40deg);}
+    90%{transform: rotate(50deg);}
+}
+
